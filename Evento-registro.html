@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UDEV-IT Registro de Evento</title>
+	<link async href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shortcut icon" href="imagenes/logo-udev-movil.jpg">
+	<script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="js/resumen_ver_mas.js"></script>
+</head>
+
+
+<body>
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light fondo_barra">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto text-uppercase mt-2">
+					<li class="nav-item active">
+						<a class="nav-link mr-5" href="#home" id="home">ACERCA DE UDEV-IT </a>
+					</li>
+					<li class="nav-item d-none d-lg-block">
+						<a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img
+								src="imagenes/logo-udev-menu.jpg" alt="UDEV"
+								class="p-2  border  bg-white rounded shadow  position-relative"
+								style="margin-top: -10px; width:50%;"></a>
+					</li>
+					
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+
+
+	<div class="d-lg-none d-flex justify-content-between fixed-top fondo_barra p-0" style="width: 100%">
+		<div class="ml-3">
+			<img src="imagenes/UDEV-ITBLANCO3432X1080.svg" style="width: 192px;" alt="UDEV-IT">
+		</div>
+		<div class="m-3 mt-2 mr-2">
+			<a href="#"><i class="fas fa-ellipsis-h fa-2x text-white pointer" id="open"></i></a>
+			<a href="#"><i class="fas fa-times  fa-2x text-white poninter" id="close"></i></a>
+		</div>
+	</div>
+
+	<section id="contacto">
+		<a name='contacto'></a>
+
+		<div class="container pt-5 mt-5">
+			<div class="row">
+				<div class="col">
+					<div class="mx-auto">
+						<h2 class="azul_logo encabezado_contacto"> Meet Up - Oaxaca Desarrolla SW</h2>
+					</div>
+					<p class="text-center h5 azul_logo p-4"> La 1a. fiesta para desarrolladores de SW Oaxaqueños.  <br>
+						
+					</p>
+				</div>
+			</div>
+			<form action="respuesta.php" method="post">
+				<div class="bg-white borde_formulario p-4 mb-5 border ">
+					<div class="row mb-3">
+						<div class="col-6">
+							<input type="text" name="nombre" id="name" class="form-control shadow-sm rounded-lg"
+								placeholder="Nombre" aria-describedby="nameHelp" required>
+						</div>
+					
+					</div>
+					<div class="row mb-3">
+						<div class="col-6">
+							<input type="text" name="email" id="email" class="form-control shadow-sm rounded-lg"
+								placeholder="Correo Electrónico" aria-describedby="emailHelp" required>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<div class="col-6">
+							<input type="text" name="telefono" id="phone" class="form-control shadow-sm rounded-lg"
+								placeholder="Teléfono" aria-describedby="telefonoHelp" required>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<div class="col-6">
+							<input type="text" name="ciudad" id="city" class="form-control shadow-sm rounded-lg"
+								placeholder="¿De municipio eres?" aria-describedby="ciudadHelp" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col text-center">
+							<button class="mb-4 mt-4 rounded btn btn-lg btn-dark fondo_azul_logo p-2">Enviar
+								Mensaje</button>
+						</div>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container-fluid	pt-3">
+			<div class="row">
+				<div class="col fondo_claro p-5 ">
+					<p class=" text-center font-weight-bolder azul_logo h3">Comunícate con nosotros</p>
+				</div>
+			</div>
+			<div class="row fondo_azul_logo text-white p-2 justify-content-between">
+				<div class="col-md-3 p-2 pt-4 float-left"><a class="link-contact"
+						href="mailto:contacto@udevit.com.mx"><img class="mr-2 icon-email"
+							src="imagenes/ic_email_24px.svg" alt="envelpoe"> <span class="font-weight-bolder"> Email:
+						</span> joe.enriquez@udevit.com.mx </a></div>
+				<div class="col-md-3 p-2 pt-4 text-center"><a class="link-contact" href="tel:9711334540"><img
+							class="icon-phone mr-2 " src="imagenes/ic_ring_volume_24px.svg" alt="tel"> <span
+							class="font-weight-bolder">
+							Tel: </span> 5539313595 </a></div>
+				<div class="col-md-3 p-2 pt-4 text-center">
+					<span class="font-weight-bolder mr-2"> Redes sociales: </span>
+					<a class="link-contact" href="https://www.linkedin.com/company/udevitmexico/"><i
+							class="fab fa-linkedin fa-lg mr-3"></i></a>
+					<a class="link-contact" href="https://www.facebook.com/UDEVITMexico/"><i
+							class="fab fa-facebook fa-lg"></i></a>
+				</div>
+				<div class="col-md-3 p-2 text-center"><img class="icon-address" src="imagenes/ic_place_24px.svg"
+						alt="address">
+					<span class="font-weight-bolder">Dirección: </span>
+					<span>Av. Emilio Carranza 12, 2da. Sección. C.P.70110, Ciudad Ixtepec, Oax. </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col color_footer1 text-center">
+					<img src="imagenes/UDEV-ITBLANCO3432X1080.svg" alt="UDEV" class="img-fluid"></br>
+					<span class="text-white float-left copyright-text">&copy2021 UDEV-IT S.A de C.V. All Rights
+						Reserved</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
